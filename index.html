@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Ally - Elevate Your Brand</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .fade-in { opacity: 0; transition: opacity 0.6s ease-in-out; }
+    .fade-in.visible { opacity: 1; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Hero Section -->
+  <section class="bg-gray-800 text-white h-screen flex items-center justify-center relative">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-4 fade-in">Let’s Elevate Your Brand</h1>
+      <a href="#services" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded transition">Get Started</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">About Us</h2>
+    <p class="max-w-xl mx-auto text-lg">At Digital Ally, we push boundaries, exceeding client expectations by delivering bold, creative, and long-term solutions.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-gray-100 py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white shadow-lg rounded hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Branding</h3>
+        <p>We create bold and consistent branding to position your company effectively in the market.</p>
+      </div>
+      <div class="p-6 bg-white shadow-lg rounded hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Website Design</h3>
+        <p>We design modern, user-friendly websites that captivate audiences and drive results.</p>
+      </div>
+      <div class="p-6 bg-white shadow-lg rounded hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Performance Marketing</h3>
+        <p>Our performance marketing strategies maximize your return on investment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section id="case-studies" class="py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Case Studies</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Case Study 1 -->
+      <div class="bg-white shadow-lg rounded p-6 hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Case Study 1</h3>
+        <p><strong>Client Challenge:</strong> Rebranding a startup.</p>
+        <p><strong>Solution:</strong> Developed a fresh, dynamic brand identity.</p>
+        <p><strong>Results:</strong> 50% increase in engagement.</p>
+      </div>
+      <!-- Case Study 2 -->
+      <div class="bg-white shadow-lg rounded p-6 hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Case Study 2</h3>
+        <p><strong>Client Challenge:</strong> Low website traffic.</p>
+        <p><strong>Solution:</strong> Redesigned the website with an SEO-driven strategy.</p>
+        <p><strong>Results:</strong> 80% increase in traffic.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="bg-gray-100 py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">What Our Clients Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="p-6 bg-white shadow-lg rounded hover:shadow-xl transition">
+        <p>"Digital Ally transformed our brand! Their team is professional and creative." – Client 1</p>
+      </div>
+      <div class="p-6 bg-white shadow-lg rounded hover:shadow-xl transition">
+        <p>"The website they designed for us is stunning and user-friendly." – Client 2</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+    <form class="max-w-lg mx-auto" id="contactForm">
+      <input type="text" placeholder="Name" class="w-full p-3 mb-4 border rounded">
+      <input type="email" placeholder="Email" class="w-full p-3 mb-4 border rounded">
+      <textarea placeholder="Message" class="w-full p-3 mb-4 border rounded"></textarea>
+      <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded transition">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2024 Digital Ally. All Rights Reserved.</p>
+    <div class="mt-4">
+      <a href="#" class="hover:underline">Facebook</a> | 
+      <a href="#" class="hover:underline">Twitter</a> | 
+      <a href="#" class="hover:underline">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    // Fade in effect for the hero section
+    window.addEventListener('scroll', function() {
+      const heroText = document.querySelector('.fade-in');
+      if (window.scrollY > 100) {
+        heroText.classList.add('visible');
+      }
+    });
+
+    // Basic form validation
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Message sent successfully!');
+    });
+  </script>
+</body>
+</html>
